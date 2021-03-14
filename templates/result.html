@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>SPAM or HAM</title>
+</head>
+<body>
+    <h2>SPAM or HAM</h2>
+    {% if prediction == 1 %}
+    <h2 style="color:red;">SPAM</h2>
+    {% elif prediction == 0 %}
+    <h2 style="color:blue;">HAM</h2>
+    {% endif %}
+    <button onclick="goBack()">Go Back</button>
+    <script>
+    function goBack(){
+        window.history.back()
+    }
+    </script>
+</body>
+</html>
